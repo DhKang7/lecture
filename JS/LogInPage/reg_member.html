@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="b.css">
+    <script src="common.js"></script>
+    <script src="reg.js"></script>
+</head>
+
+<body>
+    <div id="reg_contexts">
+        <form action="reg">
+            id를 입력하세요 <input type="text" id="reg_id" minlength="3" maxlength="12" required placeholder="3자리 이상, 12자리 이하"> <br>
+            pw를 입력하세요 <input type="password" id="reg_pw" minlength="6" maxlength="12" required placeholder="6자리 이상, 12자리 이하"> <br>
+            pw를 다시 한 번 입력하세요<input type="password" id="reg_pw_2" minlength="6" maxlength="12" required placeholder="6자리 이상, 12자리 이하"> <br>
+            이름을 입력하세요 <input type="text" id="reg_name"> <br>
+            email을 입력하세요 <input type="email" id="reg_email"> <br>
+            생일을 입력하세요 <input type="text" id="reg_birth_year" pattern="[0-9]{4}" maxlength="4" required>
+            <select id="reg_birth_month">
+                <script>
+                    for (let i = 1; i<=12; i++){
+                        document.write(`<option value="${i}">${i}</option>`);
+                    }
+                </script>
+            </select>
+            <select id="reg_birth_date">
+                <script>
+                    for (let i = 1; i<=31; i++){
+                        document.write(`<option value="${i}">${i}</option>`);
+                    }
+                </script>
+            </select><br>
+            <fieldset>
+                <legend>성별을 선택하세요 </legend>
+            <input type="radio" id="male"name="reg_gender" value="Male" checked> 
+            <label for="Male">남성</label>
+            <input type="radio" id="female" name="reg_gender" value="Female">
+            <label for="Female">여성</label>
+        </fieldset><br>
+            전화번호를 입력하세요 <input type="text" id="reg_phone_1" pattern="[0-9]{3}" maxlength="3" required>
+            <input type="text" id="reg_phone_2" pattern="[0-9]{4}" maxlength="4" required>
+            <input type="text" id="reg_phone_3" pattern="[0-9]{4}" maxlength="4" required><br>
+            <input type="button" id="reg_confirm" id="reg_botton" value="회원가입 하기" onclick= reg()>
+        </form>
+    </div>
+</body>
+
+</html>
