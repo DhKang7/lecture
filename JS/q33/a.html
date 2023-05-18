@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="a.css">
+    <script src="a.js"></script>
+</head>
+
+<body>
+    <div id="a">
+        <form action="rps">
+            <fieldset>
+                <legend>가위바위보</legend>
+                <input id="input_text" type="text" onkeypress="javascript:if(event.keyCode==13) {rpsButtonClick()}">
+                <input id="input_button" type="button" value="승부하기" onclick="rpsButtonClick();">
+            </fieldset>
+        </form>
+        <textarea name="rpsResult" id="rps_result" cols="30" rows="10">
+    </textarea>
+        <div id="screen">
+            <div id="player_img"></div>
+            <div id="result_img"></div>
+            <div id="computer_img"></div>
+        </div>
+    </div>
+</body>
+
+</html>

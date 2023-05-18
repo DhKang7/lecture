@@ -42,4 +42,3 @@ rsp_game(rsp_to_num(myChoice),comChoice);
 
 
 
-

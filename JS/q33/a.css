@@ -1,0 +1,24 @@
+#a{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+}
+    #rps {
+        height: 200px;
+    }
+    #rps_result {
+        width: 800px;
+    }
+    #screen {
+        display: flex;
+        height: 400px;
+    }
+        #player_img {
+            width: 300px;
+        }
+        #result_img {
+            width: 50px;
+        }
+        #computer_img {
+            width: 300px;
+        }
