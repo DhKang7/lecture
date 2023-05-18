@@ -1,0 +1,5 @@
+alert("헬로 월드")
+confirm("헬로 월드")
+prompt("헬로 월드",111)
+document.write("헬로 월드")
+console.log("헬로 월드")
