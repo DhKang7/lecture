@@ -1,0 +1,42 @@
+/* css */
+#cat{
+    display: none;
+}
+#top{
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    top: 5px;
+    background-color: skyblue;
+}
+#left{
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    left: 5px;
+    background-color: lawngreen;
+}
+#right{
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    right: 5px;
+    background-color: blueviolet;
+}
+#bot{
+    height: 200px;
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+    background-color: brown;
+}
+
+#popup{
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: coral;
+}
